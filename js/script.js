@@ -38,6 +38,7 @@ function isPari(number) {
 // Funzione per prendere le scelte del giocatore
 
 function play() {
+
   const pariDispari = document.getElementById('pari-dispari').value;
   const userNumber = parseInt(document.getElementById('user-number').value);
 
@@ -61,7 +62,16 @@ function play() {
 
   // Creiamo il risultato finale
 
-  const result = isPari(somma);
+  let result = isPari(somma);
+
+  if (result == true) {
+    result = 'pari'
+  } else {
+    result = 'dispari'
+  }
+
+  console.log(result);
+  console.log(pariDispari);
 
   // Creo l'alert per dare l'esito finale al giocatore
 
