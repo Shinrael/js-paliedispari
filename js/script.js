@@ -3,19 +3,21 @@
 // Creo la funzione 
 
 function palindroma(word) {
-  const wordInversa = word.split('').reverse ().join('');
-  return wordInversa;
+  for(i = 0; i < word.length / 2; i++)
+    if (word[i] !== word[word.length - 1 - i]) {
+      return false;
+    }
+  return true;  
 }
 
 // Creo il prompt
 
-const word = 'luca'//prompt ('Inserisci una parola.');
+const word = prompt ('Inserisci una parola.');
 
-const parolaInversa = palindroma(word);
 
 // Creo l'IF
 
-if (word == parolaInversa) {
+if (palindroma(word)) {
   console.log('la parola è palindroma');
 } else {
   console.log('la parola non è palindroma');
