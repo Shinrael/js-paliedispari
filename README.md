@@ -8,3 +8,7 @@ Esercizio 1:
 3. Aggiungo un if per dare il risultato finale.
 
 Esercizio 2:
+
+1. Creo una funzione per generare i numeri random e per determinare se un numero è pari o dispari
+2. Creo la funzione per giocare che poi assegnerò al button
+3. Creo un alert per dare l'esito al player.
